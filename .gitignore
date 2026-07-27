@@ -1,0 +1,43 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Secrets
+.env
+*.env.local
+config/secrets.env
+
+# Experiment output
+results/raw/*
+results/processed/*
+artifacts/*
+!results/raw/.gitkeep
+!results/processed/.gitkeep
+!artifacts/.gitkeep
+
+# Model data
+models/
+checkpoints/
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Profilers
+nsys-rep/
+*.nsys-rep
+*.qdrep
+*.sqlite
+
+# Editors
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store

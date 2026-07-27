@@ -1,0 +1,44 @@
+[project]
+name = "dgx-spark-lab"
+version = "0.1.0"
+description = "Distributed AI experiments on two interconnected NVIDIA DGX Sparks"
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "pydantic",
+    "rich",
+    "typer",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel",
+    "mypy",
+    "pytest",
+    "ruff",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unused_ignores = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.uv.workspace]
+members = [
+    "experiments/03-distributed-training",
+    "experiments/05-gpudirect-rdma",
+]
+
