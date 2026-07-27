@@ -4,6 +4,8 @@ version = "0.1.0"
 description = "Distributed AI experiments on two interconnected NVIDIA DGX Sparks"
 requires-python = ">=3.14"
 dependencies = [
+    "ipykernel>=7.3.0",
+    "ipywidgets>=8.1.8",
     "matplotlib",
     "numpy",
     "pandas",
@@ -16,6 +18,7 @@ dependencies = [
 [dependency-groups]
 dev = [
     "ipykernel",
+    "jupyterlab",
     "mypy",
     "pytest",
     "ruff",
@@ -35,6 +38,7 @@ warn_unused_ignores = true
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
 
 [tool.uv.workspace]
 members = [
