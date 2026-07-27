@@ -41,3 +41,13 @@ nsys-rep/
 
 # OS
 .DS_Store
+# Datasets
+datasets/raw/*
+datasets/processed/*
+!datasets/raw/.gitkeep
+!datasets/processed/.gitkeep
+# Generated diagram exports
+diagrams/png/*.tmp
+# Benchmark scratch data
+benchmarks/**/tmp/
+benchmarks/**/.cache/

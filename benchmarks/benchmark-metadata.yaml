@@ -1,0 +1,40 @@
+experiment:
+  name: ""
+  timestamp: ""
+  git_commit: ""
+
+hardware:
+  head_node: spark-0240
+  worker_node: spark-f868
+  gpu: NVIDIA GB10
+  rail_0:
+    subnet: 10.200.0.0/30
+    head_ip: 10.200.0.1
+    worker_ip: 10.200.0.2
+    ethernet_interface: enP2p1s0f1np1
+    rdma_interface: roceP2p1s0f1
+  rail_1:
+    subnet: 10.201.0.0/30
+    head_ip: 10.201.0.1
+    worker_ip: 10.201.0.2
+    ethernet_interface: enp1s0f1np1
+    rdma_interface: rocep1s0f1
+
+software:
+  kernel: ""
+  firmware: ""
+  driver: ""
+  cuda: ""
+  nccl: ""
+  pytorch: ""
+  python: ""
+  container_image: ""
+  container_image_id: ""
+
+configuration:
+  command: ""
+  environment: {}
+
+results:
+  raw_data: ""
+  notes: ""
