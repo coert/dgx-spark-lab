@@ -12,6 +12,7 @@ dependencies = [
     "pyarrow",
     "pydantic",
     "rich",
+    "torch[gpu]>=2.13.0",
     "typer",
 ]
 
