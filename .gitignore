@@ -51,3 +51,4 @@ diagrams/png/*.tmp
 # Benchmark scratch data
 benchmarks/**/tmp/
 benchmarks/**/.cache/
+.tmp/
